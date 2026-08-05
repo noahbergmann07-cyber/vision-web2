@@ -8260,605 +8260,98 @@ pointer-events:none;
 
 }
 
-
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-
-.contact-container{
-
-    grid-template-columns:1fr;
-
-    gap:50px;
-
-}
-
-
-
-}
-
-/* =================================
-   CONTACT PREMIUM MOTION
-================================= */
-
-
-.contact-content{
-
-    animation:
-
-    contactTextReveal 1.2s ease forwards;
-
-}
-
-
-.contact-form{
-
-    animation:
-
-    contactFormReveal 1.2s ease forwards;
-
-}
-
-
-
-/* TEXT ENTRANCE */
-
-@keyframes contactTextReveal{
-
-    from{
-
-        opacity:0;
-
-        transform:translateX(-60px);
-
-    }
-
-
-    to{
-
-        opacity:1;
-
-        transform:translateX(0);
-
-    }
-
-}
-
-
-
-/* FORM ENTRANCE */
-
-@keyframes contactFormReveal{
-
-    from{
-
-        opacity:0;
-
-        transform:translateX(60px);
-
-    }
-
-
-    to{
-
-        opacity:1;
-
-        transform:translateX(0);
-
-    }
-
-}
-
-
-
-/* FORM PREMIUM GLOW */
-
-.contact-form{
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-
-
-.contact-form::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-
-    background:
-
-    radial-gradient(
-        circle at top right,
-        rgba(212,175,55,.18),
-        transparent 45%
-    );
-
-
-    pointer-events:none;
-
-}
-
-
-
-/* BUTTON PREMIUM EFFECT */
-
-
-.contact-form button{
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-
-
-.contact-form button::after{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-
-    left:-100%;
-
-
-    width:100%;
-
-    height:100%;
-
-
-    background:
-
-    linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,.45),
-        transparent
-    );
-
-
-    transition:.6s;
-
-}
-
-
-
-.contact-form button:hover::after{
-
-    left:100%;
-
-}
-/* =================================
-   FOOTER GOLD DIVIDER
-================================= */
-
-
-.footer-divider{
-
-    height:1px;
-
-    width:60%;
-
-    margin:0 auto;
-
-
-    background:
-
-    linear-gradient(
-        90deg,
-        transparent,
-        #d4af37,
-        transparent
-    );
-
-
-    box-shadow:
-
-    0 0 25px rgba(212,175,55,.8);
-
-}
-
-
-
-/* =================================
-   PREMIUM FOOTER
-================================= */
-
-
-.footer{
-
-    position:relative;
-
-    padding:90px 0 35px;
-
-
-    background:
-
-    linear-gradient(
-        rgba(5,5,5,.88),
-        rgba(5,5,5,.96)
-    ),
-
-    url("images/footer-bg.jpg");
-
-
-    background-size:cover;
-
-    background-position:center;
-
-    background-attachment:fixed;
-
-    overflow:hidden;
-
-}
-
-.footer::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-
-    background:
-
-    radial-gradient(
-        circle at 50% 0%,
-        rgba(212,175,55,.18),
-        transparent 45%
-    );
-
-
-    pointer-events:none;
-
-}
-
-
-
-.footer-container{
-
-    position:relative;
-
-    z-index:2;
-
-
-    width:min(1200px,90%);
-
-    margin:auto;
-
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-
-    gap:50px;
-
-}
-
-
-
-.footer-brand h3{
-
-    margin:0;
-
-
-    color:#d4af37;
-
-
-    font-size:28px;
-
-
-    letter-spacing:5px;
-
-}
-
-
-
-.footer-brand p{
-
-    margin-top:20px;
-
-
-    max-width:350px;
-
-
-    color:rgba(255,255,255,.55);
-
-
-    line-height:1.7;
-
-}
-
-
-
-/* LINKS */
-
-
-.footer-links{
-
-    display:flex;
-
-    gap:35px;
-
-    flex-wrap:wrap;
-
-}
-
-
-
-.footer-links a{
-
-    color:rgba(255,255,255,.65);
-
-
-    text-decoration:none;
-
-
-    font-size:13px;
-
-
-    letter-spacing:2px;
-
-
-    transition:.3s;
-
-}
-
-
-
-.footer-links a:hover{
-
-    color:#d4af37;
-
-}
-
-
-
-/* BOTTOM */
-
-
-.footer-bottom{
-
-    width:min(1200px,90%);
-
-
-    margin:70px auto 0;
-
-
-    padding-top:25px;
-
-
-    border-top:
-
-    1px solid rgba(255,255,255,.08);
-
-
-    color:
-
-    rgba(255,255,255,.35);
-
-
-    font-size:12px;
-
-}
-
-
-
-/* MOBILE */
-
-@media(max-width:800px){
-
-
-.footer-container{
-
-    flex-direction:column;
-
-    align-items:flex-start;
-
-}
-
-
-.footer-links{
-
-    flex-wrap:wrap;
-
-}
-
-
-}
-
-/* =================================
-   PREMIUM LEGAL PAGES
-================================= */
-
-
-.legal-page{
-
-    background:
-    linear-gradient(
-        rgba(5,5,5,.82),
-        rgba(5,5,5,.95)
-    ),
-    url("images/impressum-bg.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
-    background-attachment:fixed;
-
-    color:white;
-
-}
-
-
-
-/* CONTENT */
-
-.legal-container{
-
-    width:min(900px,90%);
-
-    margin:160px auto 100px;
-
-    padding:70px;
-
-
-    background:
-
-    rgba(255,255,255,.05);
-
-
-    border:
-
-    1px solid rgba(255,255,255,.12);
-
-
-    backdrop-filter:blur(25px);
-
-
-    box-shadow:
-
-    0 40px 120px rgba(0,0,0,.7);
-
-
-}
-
-
-
-/* HEADLINE */
-
-.legal-container h1{
-
-    font-size:64px;
-
-    letter-spacing:-2px;
-
-    margin-bottom:40px;
-
-    background:
-
-    linear-gradient(
-        135deg,
-        white,
-        #d4af37
-    );
-
-    -webkit-background-clip:text;
-
-    -webkit-text-fill-color:transparent;
-
-}
-
-
-
-/* TEXT */
-
-.legal-container h2{
-
-    margin-top:45px;
-
-    color:#d4af37;
-
-    font-size:22px;
-
-    letter-spacing:2px;
-
-}
-
-
-
-.legal-container p{
-
-    color:rgba(255,255,255,.75);
-
-    line-height:1.8;
-
-    font-size:16px;
-
-}
-
-
-
-/* MOBILE */
-
-@media(max-width:700px){
-
-    .legal-container{
-
-        padding:35px;
-
-        margin-top:120px;
-
-    }
-
-
-    .legal-container h1{
-
-        font-size:42px;
-
-    }
-
-}
-
-.cinematicTransition .transitionCenterLine {
-
-    display:none !important;
-
-}
-
-/* ==========================================
-   VISION WEB - FINAL MOBILE SYSTEM
-   Desktop bleibt komplett unberührt
-========================================== */
+/* =====================================================
+   MOBILE FIRST
+===================================================== */
 
 @media (max-width:900px){
+
+html{
+    font-size:16px;
+    scroll-behavior:smooth;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
 
 html,
 body{
     width:100%;
+    max-width:100%;
     overflow-x:hidden;
 }
 
-
-*{
-    box-sizing:border-box;
+body{
+    overflow-x:hidden;
 }
-
 
 section{
     width:100%;
     padding-left:24px;
     padding-right:24px;
+    overflow:hidden;
 }
-
 
 img,
 video{
-    max-width:100%;
     display:block;
+    max-width:100%;
+}
+
+.hero,
+.transformation,
+.transformation-bridge,
+.services,
+.digital-bridge,
+.portfolio,
+.evolution-bridge,
+.process-section,
+.contact-section,
+.footer{
+    width:100%;
+    overflow:hidden;
 }
 
 
-/* ==========================================
-   PREMIUM MOBILE HERO
-========================================== */
+/* ==========================
+   HEADER
+========================== */
 
+.header{
+
+    height:80px;
+
+    padding:0 22px;
+
+    justify-content:space-between;
+}
+
+.logo{
+
+    font-size:20px;
+
+    letter-spacing:2px;
+}
+
+.navigation{
+
+    display:none;
+}
+
+.headerButton{
+
+    padding:12px 18px;
+
+    font-size:13px;
+}
+
+
+/* ==========================
+   HERO
+========================== */
 
 .hero{
 
@@ -8869,211 +8362,138 @@ video{
     display:flex;
 
     align-items:center;
-
-    overflow:hidden;
-
 }
-
 
 .heroVideo video{
 
-    transform:scale(1.12);
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
 
     object-position:center;
 
+    transform:scale(1.08);
 }
-
-
-.heroOverlay{
-
-    background:
-
-    radial-gradient(
-    circle at center,
-    transparent 15%,
-    rgba(5,5,5,.92)
-    ),
-
-    linear-gradient(
-    180deg,
-    rgba(5,5,5,.7),
-    rgba(5,5,5,.95)
-    );
-
-}
-
-
 
 .heroWrapper{
 
     width:100%;
 
-    min-height:auto;
-
-    padding:0;
-
     display:flex;
 
     flex-direction:column;
 
-    justify-content:center;
+    align-items:center;
 
-    gap:55px;
-
+    gap:60px;
 }
-
-
 
 .heroContent{
 
     width:100%;
 
-    max-width:100%;
+    max-width:360px;
+
+    margin:0 auto;
 
     text-align:center;
 
     transform:none;
-
 }
 
-
-
 .premiumTag{
+
+    display:inline-flex;
 
     padding:10px 18px;
 
     font-size:11px;
 
-    margin-bottom:25px;
-
+    margin-bottom:24px;
 }
-
-
 
 .hero h1{
 
-    font-size:clamp(38px,10vw,52px);
+    font-size:42px;
 
-    line-height:1.05;
+    line-height:1.08;
 
     letter-spacing:-1.5px;
-
-    margin:0;
-
 }
-
-
-
-.hero h1 span{
-
-    margin-top:5px;
-
-}
-
-
 
 .hero p{
 
-    margin:25px auto 0;
+    margin:24px auto 0;
 
-    max-width:340px;
+    max-width:330px;
 
     font-size:16px;
 
-    line-height:1.7;
-
+    line-height:1.8;
 }
-
-
 
 .heroButtons{
 
-    margin-top:35px;
-
     width:100%;
 
-    max-width:340px;
-
-    margin-left:auto;
-
-    margin-right:auto;
+    display:flex;
 
     flex-direction:column;
 
     gap:14px;
 
+    margin-top:34px;
 }
-
-
 
 .heroButton,
 .secondaryButton{
 
     width:100%;
 
-    padding:17px 25px;
-
     justify-content:center;
 
-    display:flex;
-
+    padding:17px;
 }
-
-
 
 .trustLine{
 
-    margin-top:25px;
+    margin-top:24px;
 
     font-size:13px;
 
-    line-height:2;
+    line-height:1.9;
 
+    text-align:center;
 }
-
-
 
 .heroVisual{
 
     width:100%;
 
-    height:300px;
+    height:320px;
 
-    min-height:300px;
-
+    position:relative;
 }
-
-
-
-.floatingPerformance{
-
-    top:-10px;
-
-    right:5px;
-
-    left:auto;
-
-    transform:scale(.72);
-
-}
-
-
 
 .floatingMobile{
-
-    right:auto;
 
     left:50%;
 
     top:20px;
 
-    transform:
-    translateX(-50%)
-    scale(.82);
-
+    transform:translateX(-50%) scale(.82);
 }
 
+.floatingPerformance{
 
+    top:-5px;
+
+    left:0;
+
+    transform:scale(.72);
+}
 
 .floatingTrust{
 
@@ -9082,10 +8502,7 @@ video{
     bottom:0;
 
     transform:scale(.72);
-
 }
-
-
 
 .scrollIndicator{
 
@@ -9093,192 +8510,15 @@ video{
 
 }
 
-
-
-/* ==========================================
-   GLOBAL MOBILE SPACING
-========================================== */
-
-
-.cinematicTransition,
-.transformation,
-.transformation-bridge,
-.services,
-.digital-bridge,
-.portfolio,
-.evolution-bridge,
-.process-section,
-.contact-section,
-.footer{
-
-    overflow:hidden;
-
-}
-
-
-/* ==========================================
+/* ==========================
    TRANSFORMATION MOBILE
-========================================== */
-
+========================== */
 
 .transformation{
 
     padding-top:100px;
 
     padding-bottom:90px;
-
-}
-
-
-
-.transformationHeader h2{
-
-    font-size:clamp(34px,9vw,46px);
-
-    line-height:1.08;
-
-}
-
-
-
-.transformationHeader p{
-
-    font-size:16px;
-
-    line-height:1.7;
-
-    margin-top:25px;
-
-}
-
-
-
-.beforeAfter{
-
-    margin-top:55px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:35px;
-
-    padding-bottom:50px;
-
-}
-
-
-
-.websiteCard{
-
-    width:100%;
-
-    border-radius:28px;
-
-}
-
-
-
-.websiteCard img{
-
-    height:230px;
-
-}
-
-
-
-.cardInfo{
-
-    padding:22px;
-
-}
-
-
-
-.cardInfo strong{
-
-    font-size:21px;
-
-}
-
-
-
-.beforeWebsite,
-.afterWebsite{
-
-    transform:none;
-
-    animation:none;
-
-    opacity:1;
-
-}
-
-
-
-.transformationCore{
-
-    height:160px;
-
-}
-
-
-
-.transformLine{
-
-    height:70px;
-
-}
-
-
-
-.transformCircle{
-
-    width:70px;
-
-    height:70px;
-
-    font-size:26px;
-
-}
-
-
-
-.transformationStats{
-
-    margin-top:30px;
-
-    gap:18px;
-
-}
-
-
-
-.transformationStats div{
-
-    min-width:100%;
-
-    padding:26px;
-
-    text-align:center;
-
-}
-
-
-.transformationStats strong{
-
-    font-size:32px;
-
-}
-
-/* ==========================================
-   TRANSFORMATION MOBILE PREMIUM
-========================================== */
-
-
-.transformation{
-
-    padding:110px 24px 100px;
 
 }
 
@@ -9294,11 +8534,11 @@ video{
 
 .transformationHeader h2{
 
-    font-size:clamp(34px,9vw,46px);
+    font-size:38px;
 
     line-height:1.12;
 
-    letter-spacing:-1.5px;
+    letter-spacing:-1.2px;
 
 }
 
@@ -9312,18 +8552,24 @@ video{
 
 .transformationHeader p{
 
+    margin-top:22px;
+
     font-size:16px;
 
     line-height:1.8;
 
-    max-width:330px;
+    max-width:340px;
+
+    margin-left:auto;
+
+    margin-right:auto;
 
 }
 
 
-/* Statistik Karten */
+/* BEFORE AFTER */
 
-.transformationStats{
+.beforeAfter{
 
     margin-top:55px;
 
@@ -9331,7 +8577,158 @@ video{
 
     flex-direction:column;
 
+    align-items:center;
+
+    gap:35px;
+
+    padding-bottom:60px;
+
+}
+
+
+.websiteCard{
+
+    width:100%;
+
+    max-width:390px;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+}
+
+
+.websiteCard img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+
+.beforeWebsite,
+.afterWebsite{
+
+    transform:none;
+
+    animation:none;
+
+    opacity:1;
+
+}
+
+
+.cardLabel{
+
+    top:18px;
+
+    left:18px;
+
+    padding:8px 15px;
+
+    font-size:11px;
+
+}
+
+
+.cardInfo{
+
+    padding:22px;
+
+}
+
+
+.cardInfo strong{
+
+    font-size:21px;
+
+}
+
+
+.cardInfo span{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+
+
+/* TRANSFORMATION MITTE */
+
+.transformationCore{
+
+    width:100%;
+
+    height:150px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+
+.transformLine{
+
+    position:relative;
+
+    width:2px;
+
+    height:65px;
+
+}
+
+
+.transformCircle{
+
+    width:72px;
+
+    height:72px;
+
+    font-size:27px;
+
+}
+
+
+.transformationCore span{
+
+    margin-top:0;
+
+    font-size:10px;
+
+    letter-spacing:2px;
+
+}
+
+
+
+/* STATISTIK */
+
+.transformationStats{
+
+    display:flex;
+
+    flex-direction:column;
+
     gap:18px;
+
+    margin-top:20px;
 
 }
 
@@ -9340,9 +8737,7 @@ video{
 
     width:100%;
 
-    min-width:0;
-
-    padding:28px 22px;
+    padding:28px 20px;
 
     border-radius:24px;
 
@@ -9366,130 +8761,26 @@ video{
 
 
 
-/* Before After Bereich */
-
-
-.beforeAfter{
-
-    margin-top:60px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:35px;
-
-    padding-bottom:80px;
-
-}
-
-
-.websiteCard{
-
-    width:100%;
-
-    border-radius:28px;
-
-}
-
-
-.websiteCard img{
-
-    height:260px;
-
-}
-
-
-.cardLabel{
-
-    top:18px;
-
-    left:18px;
-
-    padding:8px 16px;
-
-    font-size:11px;
-
-}
-
-
-.cardInfo{
-
-    padding:20px;
-
-}
-
-
-.cardInfo strong{
-
-    font-size:21px;
-
-}
-
-
-.cardInfo span{
-
-    font-size:14px;
-
-}
-
-
-
-/* Transformation Mitte */
-
-
-.transformationCore{
-
-    height:150px;
-
-    gap:20px;
-
-}
-
-
-.transformLine{
-
-    height:80px;
-
-}
-
-
-.transformCircle{
-
-    width:75px;
-
-    height:75px;
-
-    font-size:28px;
-
-}
-
-
-.transformationCore span{
-
-    font-size:10px;
-
-    letter-spacing:2px;
-
-}
-
-
-
-/* ==========================================
-   SERVICES MOBILE PREMIUM
-========================================== */
-
+/* ==========================
+   SERVICES MOBILE
+========================== */
 
 .services{
 
-    padding:100px 24px;
+    padding-top:100px;
+
+    padding-bottom:100px;
 
 }
 
 
 .services-header{
 
+    width:100%;
+
     margin-bottom:55px;
+
+    text-align:center;
 
 }
 
@@ -9505,16 +8796,27 @@ video{
 
 .services-header h2{
 
+    margin-top:22px;
+
     font-size:38px;
 
-    line-height:1.15;
+    line-height:1.12;
 
     letter-spacing:-1px;
 
 }
 
 
+.services-header h2 strong{
+
+    display:block;
+
+}
+
+
 .services-header p{
+
+    margin-top:22px;
 
     font-size:16px;
 
@@ -9524,10 +8826,11 @@ video{
 
 
 
-/* Service Karten */
-
+/* SERVICE KARTEN */
 
 .services-grid{
+
+    display:grid;
 
     grid-template-columns:1fr;
 
@@ -9538,14 +8841,25 @@ video{
 
 .service-card{
 
-    padding:35px 28px;
+    padding:34px 26px;
 
     border-radius:28px;
 
 }
 
 
+.service-card small{
+
+    width:40px;
+
+    height:40px;
+
+}
+
+
 .service-card h3{
+
+    margin-top:24px;
 
     font-size:25px;
 
@@ -9553,6 +8867,8 @@ video{
 
 
 .service-card p{
+
+    margin-top:16px;
 
     font-size:15px;
 
@@ -9562,8 +8878,7 @@ video{
 
 
 
-/* Blueprint Elemente ausrichten */
-
+/* BLUEPRINT ELEMENTE */
 
 .blueprint-left,
 .interface-right{
@@ -9584,28 +8899,39 @@ video{
 
     margin:35px auto;
 
-}
-
-
-.blueprint-left,
-.interface-right{
-
     transform:none;
 
     animation:none;
 
 }
 
-/* ==========================================
-   DIGITAL BRIDGE MOBILE PREMIUM
-========================================== */
 
+.blueprint-window,
+.interface-screen{
+
+    width:100%;
+
+    height:100%;
+
+}
+
+/* ==========================
+   DIGITAL BRIDGE MOBILE
+========================== */
 
 .digital-bridge{
 
     min-height:auto;
 
-    padding:100px 24px;
+    padding-top:100px;
+
+    padding-bottom:100px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
 
 }
 
@@ -9619,25 +8945,56 @@ video{
 }
 
 
+.bridge-interface img{
+
+    width:100%;
+
+    height:auto;
+
+}
+
+
 .bridge-content{
 
+    width:100%;
+
     text-align:center;
+
+}
+
+
+.bridge-content span{
+
+    font-size:11px;
+
+    letter-spacing:4px;
 
 }
 
 
 .bridge-content h2{
 
-    font-size:clamp(34px,9vw,44px);
+    margin-top:22px;
 
-    line-height:1.1;
+    font-size:38px;
+
+    line-height:1.12;
 
     letter-spacing:-1px;
 
 }
 
 
+.bridge-content h2 strong{
+
+    display:block;
+
+}
+
+
 .bridge-content p{
+
+    margin-top:22px;
 
     font-size:16px;
 
@@ -9647,35 +9004,56 @@ video{
 
 
 
-/* ==========================================
-   PORTFOLIO MOBILE PREMIUM
-========================================== */
-
+/* ==========================
+   PORTFOLIO MOBILE
+========================== */
 
 .portfolio{
 
-    padding:100px 24px;
+    padding-top:100px;
+
+    padding-bottom:100px;
 
 }
 
 
-.portfolio-header{
+.portfolio-content{
 
     text-align:center;
 
 }
 
 
-.portfolio-header h2{
+.portfolio-content span{
 
-    font-size:40px;
+    font-size:11px;
 
-    line-height:1.1;
+    letter-spacing:4px;
 
 }
 
 
-.portfolio-header p{
+.portfolio-content h2{
+
+    margin-top:22px;
+
+    font-size:38px;
+
+    line-height:1.12;
+
+}
+
+
+.portfolio-content h2 strong{
+
+    display:block;
+
+}
+
+
+.portfolio-content p{
+
+    margin-top:22px;
 
     font-size:16px;
 
@@ -9684,17 +9062,48 @@ video{
 }
 
 
-.portfolio-grid{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:28px;
+.portfolio-stage{
 
     margin-top:45px;
 
+    width:100%;
+
 }
+
+
+.portfolio-browser{
+
+    width:100%;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+}
+
+
+.browser-top{
+
+    min-height:55px;
+
+}
+
+
+.browser-address{
+
+    font-size:11px;
+
+}
+
+
+.browser-site{
+
+    width:100%;
+
+    height:auto;
+
+}
+
 
 
 .project-card{
@@ -9703,40 +9112,27 @@ video{
 
     transform:none;
 
-    border-radius:28px;
-
-}
-
-
-.project-card img{
-
-    width:100%;
-
-    height:260px;
-
-    object-fit:cover;
-
-}
-
-
-.project-card:hover{
-
-    transform:translateY(-8px);
-
 }
 
 
 
-/* ==========================================
-   EVOLUTION SECTION MOBILE PREMIUM
-========================================== */
-
+/* ==========================
+   EVOLUTION MOBILE
+========================== */
 
 .evolution-bridge{
 
     min-height:auto;
 
-    padding:100px 24px;
+    padding-top:100px;
+
+    padding-bottom:100px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
 
     text-align:center;
 
@@ -9750,18 +9146,38 @@ video{
 }
 
 
+.evolution-content span{
+
+    font-size:11px;
+
+    letter-spacing:4px;
+
+}
+
+
 .evolution-content h2{
 
-    font-size:clamp(34px,9vw,44px);
+    margin-top:22px;
 
-    line-height:1.08;
+    font-size:38px;
+
+    line-height:1.1;
 
     letter-spacing:-1px;
 
 }
 
 
+.evolution-content h2 strong{
+
+    display:block;
+
+}
+
+
 .evolution-content p{
+
+    margin-top:22px;
 
     font-size:16px;
 
@@ -9771,14 +9187,15 @@ video{
 
 
 
-/* ==========================================
-   PROCESS MOBILE PREMIUM
-========================================== */
-
+/* ==========================
+   PROCESS MOBILE
+========================== */
 
 .process-section{
 
-    padding:100px 24px;
+    padding-top:100px;
+
+    padding-bottom:100px;
 
 }
 
@@ -9790,16 +9207,36 @@ video{
 }
 
 
+.process-content span{
+
+    font-size:11px;
+
+    letter-spacing:4px;
+
+}
+
+
 .process-content h2{
 
-    font-size:40px;
+    margin-top:22px;
 
-    line-height:1.1;
+    font-size:38px;
+
+    line-height:1.12;
+
+}
+
+
+.process-content h2 strong{
+
+    display:block;
 
 }
 
 
 .process-content p{
+
+    margin-top:22px;
 
     font-size:16px;
 
@@ -9808,53 +9245,81 @@ video{
 }
 
 
-.process-blueprint{
+.process-system{
+
+    margin-top:50px;
 
     display:flex;
 
     flex-direction:column;
 
-    gap:25px;
+    align-items:center;
 
-    margin-top:45px;
+    gap:25px;
 
 }
 
 
-.process-step{
+.system-network{
+
+    display:none;
+
+}
+
+
+.system-core{
+
+    position:relative;
+
+    width:260px;
+
+    height:260px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+
+.system-item{
+
+    position:relative;
 
     width:100%;
 
-    padding:32px 22px;
+    padding:30px 20px;
 
-    border-radius:26px;
-
-}
-
-
-.process-step h3{
-
-    font-size:24px;
+    text-align:center;
 
 }
 
 
-.process-step p{
+.system-item h4{
 
-    font-size:15px;
+    margin-top:12px;
+
+    font-size:22px;
 
 }
 
 
 
-/* ==========================================
-   CONTACT MOBILE PREMIUM
-========================================== */
+/* ==========================
+   CONTACT MOBILE
+========================== */
 
+.contact-section{
 
-.contact{
+    padding-top:100px;
 
-    padding:100px 24px;
+    padding-bottom:100px;
 
 }
 
@@ -9865,7 +9330,7 @@ video{
 
     flex-direction:column;
 
-    gap:35px;
+    gap:40px;
 
 }
 
@@ -9877,16 +9342,29 @@ video{
 }
 
 
+.contact-label{
+
+    font-size:11px;
+
+    letter-spacing:4px;
+
+}
+
+
 .contact-content h2{
 
-    font-size:40px;
+    margin-top:22px;
 
-    line-height:1.1;
+    font-size:38px;
+
+    line-height:1.12;
 
 }
 
 
 .contact-content p{
+
+    margin-top:22px;
 
     font-size:16px;
 
@@ -9927,16 +9405,15 @@ video{
 
     width:100%;
 
-    padding:18px;
+    padding:17px;
 
 }
 
 
 
-/* ==========================================
-   FOOTER MOBILE PREMIUM
-========================================== */
-
+/* ==========================
+   FOOTER MOBILE
+========================== */
 
 .footer{
 
@@ -9951,16 +9428,11 @@ video{
 
     flex-direction:column;
 
+    align-items:center;
+
     gap:35px;
 
     text-align:center;
-
-}
-
-
-.footer-logo{
-
-    margin:auto;
 
 }
 
@@ -9976,61 +9448,25 @@ video{
 }
 
 
-.footer p{
+.footer-bottom{
 
-    font-size:14px;
+    margin-top:35px;
 
-    line-height:1.7;
+    text-align:center;
+
+}
+
+
+.footer-bottom span{
+
+    font-size:13px;
+
+    line-height:1.6;
+
+}
+
 
 }
 
 
 
-/* ==========================================
-   GLOBAL MOBILE CLEANUP
-========================================== */
-
-
-.heroStage,
-.stageLight,
-.stageGrid{
-
-    opacity:.45;
-
-}
-
-
-.cinematicLight{
-
-    display:none;
-
-}
-
-
-body::before{
-
-    opacity:.5;
-
-}
-
-
-section{
-
-    overflow:hidden;
-
-}
-
-
-video{
-
-    object-position:center;
-
-}
-
-
-button,
-a{
-
-    -webkit-tap-highlight-color:transparent;
-
-}
